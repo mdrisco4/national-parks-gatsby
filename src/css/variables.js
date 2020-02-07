@@ -1,5 +1,3 @@
-
-
 const variables = { 
     colors: {
       lightGray: `#d2d2d2`,

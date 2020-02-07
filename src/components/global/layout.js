@@ -12,9 +12,10 @@ import { ThemeProvider } from 'styled-components'
 
 import Header from "./header"
 import Footer from "./footer"
+import variables from "../../css/variables.js"
+
 import "../../css/normalize.css"
 import "../../css/fonts.css"
-import "../../css/variables.js"
 
 
 const Layout = ({ children }) => {
@@ -46,3 +47,19 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+// export const carouselImageQuery = graphql`
+//   query {
+//     carouselImages: allFile(filter: { extension: { eq: "jpg" } }) {
+//       edges {
+//         node {
+//           childImageSharp {
+//             fluid(maxWidth: 800, quality: 90) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }    
+//         }
+//       }
+//     }
+//   }
+// `
